@@ -24,8 +24,8 @@ const translations = {
     ar: {
         subtitle: "اختر نكهتك المفضلة وقيمها الآن!",
         starsTitle: "اضغط للتقييم بالنجوم:",
-        submitBtn: "إرسال التقييم 🚀",
-        popupTitle: "شكرًا لك! 🎉",
+        submitBtn: "إرسال التقييم ",
+        popupTitle: "شكرًا لك! 🧊",
         popupDesc: "تم إرسال تقييمك بنجاح إلى الشاشة الكبيرة.",
         alertStars: "الرجاء اختيار تقييم بالنجوم أولاً! ⭐",
         toggleBtn: "English"
@@ -33,8 +33,8 @@ const translations = {
     en: {
         subtitle: "Choose your favorite flavor and rate it now!",
         starsTitle: "Tap to rate with stars:",
-        submitBtn: "Submit Rating 🚀",
-        popupTitle: "Thank You! 🎉",
+        submitBtn: "Submit Rating ",
+        popupTitle: "Thank You! 🧊",
         popupDesc: "Your rating has been successfully sent to the big screen.",
         alertStars: "Please select a star rating first! ⭐",
         toggleBtn: "عربي"
