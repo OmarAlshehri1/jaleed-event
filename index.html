@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,15 @@
 </head>
 <body>
 
+    <!-- زر تحويل اللغة في أعلى الصفحة -->
+    <div class="lang-switch-container">
+        <button id="lang-btn" class="lang-btn">English</button>
+    </div>
+
     <div class="mobile-container">
         <header>
             <h1 class="brand-title">JALEED FLAVORS</h1>
-            <p class="brand-subtitle">اختر نكهتك المفضلة وقيمها الآن!</p>
+            <p class="brand-subtitle" id="text-subtitle">اختر نكهتك المفضلة وقيمها الآن!</p>
         </header>
 
         <div class="voting-form">
@@ -21,7 +26,7 @@
                 <input type="radio" name="flavor" value="raspberry" checked>
                 <div class="option-content">
                     <img src="https://res.cloudinary.com/dfoch6txc/image/upload/v1783332212/APPLE-BERRY-CAN_ly0oev.png" alt="Raspberry">
-                    <span>RASPBERRY & APPLE</span>
+                    <span class="flavor-name" data-ar="التوت العليق والتفاح" data-en="RASPBERRY & APPLE">التوت العليق والتفاح</span>
                 </div>
             </label>
 
@@ -30,7 +35,7 @@
                 <input type="radio" name="flavor" value="blackberry">
                 <div class="option-content">
                     <img src="https://res.cloudinary.com/dfoch6txc/image/upload/v1783332212/BLACKBERRY-_-GRAPE-CAN_npyf0h.png" alt="Blackberry">
-                    <span>BLACKBERRY & GRAPE</span>
+                    <span class="flavor-name" data-ar="التوت الأسود والعنب" data-en="BLACKBERRY & GRAPE">التوت الأسود والعنب</span>
                 </div>
             </label>
 
@@ -39,13 +44,13 @@
                 <input type="radio" name="flavor" value="elderflower">
                 <div class="option-content">
                     <img src="https://res.cloudinary.com/dfoch6txc/image/upload/v1783332212/ELDERFLOWER-_-APPLE-CAN_afk3hf.png" alt="Elderflower">
-                    <span>ELDERFLOWER & APPLE</span>
+                    <span class="flavor-name" data-ar="زهرة البيلسان والتفاح" data-en="ELDERFLOWER & APPLE">زهرة البيلسان والتفاح</span>
                 </div>
             </label>
 
             <!-- اختيار النجوم -->
             <div class="stars-container">
-                <p class="section-title">اضغط للتقييم بالنجوم:</p>
+                <p class="section-title" id="text-stars-title">اضغط للتقييم بالنجوم:</p>
                 <div class="star-rating">
                     <span class="star" data-value="5">★</span>
                     <span class="star" data-value="4">★</span>
@@ -62,8 +67,8 @@
     <!-- نافذة نجاح التقييم -->
     <div id="success-popup" class="popup hidden">
         <div class="popup-content">
-            <h2>شكرًا لك! 🎉</h2>
-            <p>تم إرسال تقييمك بنجاح إلى الشاشة الكبيرة.</p>
+            <h2 id="popup-title">شكرًا لك! 🎉</h2>
+            <p id="popup-desc">تم إرسال تقييمك بنجاح إلى الشاشة الكبيرة.</p>
         </div>
     </div>
 

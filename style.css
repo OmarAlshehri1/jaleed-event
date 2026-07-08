@@ -5,20 +5,48 @@ body {
     font-family: 'Tajawal', sans-serif;
     color: #333;
     display: flex;
-    justify-content: center;
-    direction: rtl; /* لتنسيق النصوص العربية بشكل صحيح */
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* تنسيق حاوية تحويل اللغة */
+.lang-switch-container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 24px 0 24px;
+    box-sizing: border-box;
+}
+
+.lang-btn {
+    background: #fff;
+    border: 2px solid #e2e8f0;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Tajawal', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    border-color: #0084ff;
+    color: #0084ff;
 }
 
 .mobile-container {
     width: 100%;
     max-width: 450px;
-    padding: 24px;
+    padding: 10px 24px 24px 24px;
     box-sizing: border-box;
 }
 
 header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .brand-title {
@@ -56,10 +84,13 @@ header {
     transition: all 0.3s ease;
 }
 
+/* دعم الاتجاهين للصور والنصوص عند قلب اللغة */
+body[dir="rtl"] .option-content img { margin-left: 20px; margin-right: 0; }
+body[dir="ltr"] .option-content img { margin-right: 20px; margin-left: 0; }
+
 .option-content img {
     height: 65px;
     object-fit: contain;
-    margin-left: 20px; /* مسافة للصورة بالاتجاه العربي */
 }
 
 .option-content span {
@@ -102,7 +133,7 @@ header {
 .star:hover ~ .star,
 .star.active,
 .star.active ~ .star {
-    color: #ffb800; /* لون أصفر واضح للنجوم */
+    color: #ffb800;
 }
 
 .submit-btn {
