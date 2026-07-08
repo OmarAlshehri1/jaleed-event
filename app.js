@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
 
+// الربط المباشر بقاعدة بيانات مشروعك jaleed-event
 const firebaseConfig = {
   apiKey: "AIzaSyCuj5OVlYi6HxcYpRcDRDSI0vd--eQZWbc",
   authDomain: "jaleed-event.firebaseapp.com",
@@ -30,7 +31,7 @@ document.getElementById('submit-vote-btn').addEventListener('click', () => {
     const selectedFlavor = document.querySelector('input[name="flavor"]:checked').value;
 
     if (selectedStars === 0) {
-        alert("Please select a star rating first! ⭐");
+        alert("الرجاء اختيار تقييم بالنجوم أولاً! ⭐");
         return;
     }
 
@@ -49,7 +50,7 @@ document.getElementById('submit-vote-btn').addEventListener('click', () => {
             popup.classList.add('hidden');
             selectedStars = 0;
             stars.forEach(s => s.classList.remove('active'));
-        }, 3000);
+        }, 2500);
     }).catch(error => {
         console.error("Error sending vote:", error);
     });

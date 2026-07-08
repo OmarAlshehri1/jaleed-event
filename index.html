@@ -12,10 +12,11 @@
     <div class="mobile-container">
         <header>
             <h1 class="brand-title">JALEED FLAVORS</h1>
-            <p class="brand-subtitle">Select your favorite flavor and rate it!</p>
+            <p class="brand-subtitle">اختر نكهتك المفضلة وقيمها الآن!</p>
         </header>
 
         <div class="voting-form">
+            <!-- النكهة الأولى -->
             <label class="flavor-option">
                 <input type="radio" name="flavor" value="raspberry" checked>
                 <div class="option-content">
@@ -24,6 +25,7 @@
                 </div>
             </label>
 
+            <!-- النكهة الثانية -->
             <label class="flavor-option">
                 <input type="radio" name="flavor" value="blackberry">
                 <div class="option-content">
@@ -32,6 +34,7 @@
                 </div>
             </label>
 
+            <!-- النكهة الثالثة -->
             <label class="flavor-option">
                 <input type="radio" name="flavor" value="elderflower">
                 <div class="option-content">
@@ -40,8 +43,9 @@
                 </div>
             </label>
 
+            <!-- اختيار النجوم -->
             <div class="stars-container">
-                <p class="section-title">Tap to Rate:</p>
+                <p class="section-title">اضغط للتقييم بالنجوم:</p>
                 <div class="star-rating">
                     <span class="star" data-value="5">★</span>
                     <span class="star" data-value="4">★</span>
@@ -51,14 +55,15 @@
                 </div>
             </div>
 
-            <button id="submit-vote-btn" class="submit-btn">Send Vote 🚀</button>
+            <button id="submit-vote-btn" class="submit-btn">إرسال التقييم 🚀</button>
         </div>
     </div>
 
+    <!-- نافذة نجاح التقييم -->
     <div id="success-popup" class="popup hidden">
         <div class="popup-content">
-            <h2>Thank You! 🎉</h2>
-            <p>Your vote has been sent to the big screen successfully.</p>
+            <h2>شكرًا لك! 🎉</h2>
+            <p>تم إرسال تقييمك بنجاح إلى الشاشة الكبيرة.</p>
         </div>
     </div>
 
