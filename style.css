@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7f9;
+    font-family: 'Tajawal', sans-serif;
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-title {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 0;
+    color: #111;
+}
+
+.brand-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.flavor-option {
+    display: block;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.flavor-option input {
+    display: none;
+}
+
+.option-content {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: all 0.3s ease;
+}
+
+.option-content img {
+    height: 60px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.option-content span {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #222;
+}
+
+.flavor-option input:checked + .option-content {
+    border-color: #0084ff;
+    background: rgba(0, 132, 255, 0.02);
+}
+
+.stars-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.star {
+    color: #cbd5e1;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    padding: 0 4px;
+}
+
+.star:hover,
+.star:hover ~ .star,
+.star.active,
+.star.active ~ .star {
+    color: #ffb800;
+}
+
+.submit-btn {
+    width: 100%;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.submit-btn:hover {
+    background: #0084ff;
+}
+
+.popup {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 9999;
+}
+
+.popup.hidden { display: none; }
+
+.popup-content {
+    background: white; padding: 30px; border-radius: 20px;
+    text-align: center; max-width: 80%;
+}

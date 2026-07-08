@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f6f7f9;
+    font-family: 'Tajawal', sans-serif;
+    overflow: hidden;
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+    color: #111;
+    letter-spacing: 2px;
+}
+
+.flavors-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.flavor-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header-zone h2 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #111;
+    margin: 0 0 5px 0;
+}
+
+.can-stage {
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.can-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 3;
+}
+
+.smoke-layer {
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140%;
+    height: 100px;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 70%);
+    filter: blur(20px);
+    z-index: 2;
+}
+
+.mirror-reflection {
+    width: 100%;
+    height: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transform: scaleY(-1);
+    opacity: 0.15;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%);
+    margin-top: -5px;
+    z-index: 1;
+}
+
+.stars-display {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+    color: #ffb800;
+}
+
+.rating-number {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #111;
+}
+
+.rating-number .score {
+    color: #0084ff;
+}
+
+.total-votes {
+    font-size: 1rem;
+    color: #718096;
+    margin-top: 5px;
+}

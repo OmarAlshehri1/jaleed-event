@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Your Jaleed Flavor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mobile-container">
+        <header>
+            <h1 class="brand-title">JALEED FLAVORS</h1>
+            <p class="brand-subtitle">Select your favorite flavor and rate it!</p>
+        </header>
+
+        <div class="voting-form">
+            <label class="flavor-option">
+                <input type="radio" name="flavor" value="raspberry" checked>
+                <div class="option-content">
+                    <img src="https://res.cloudinary.com/dfoch6txc/image/upload/v1783332212/APPLE-BERRY-CAN_ly0oev.png" alt="Raspberry">
+                    <span>RASPBERRY & APPLE</span>
+                </div>
+            </label>
+
+            <label class="flavor-option">
+                <input type="radio" name="flavor" value="blackberry">
+                <div class="option-content">
+                    <img src="https://res.cloudinary.com/dfoch6txc/image/upload/v1783332212/BLACKBERRY-_-GRAPE-CAN_npyf0h.png" alt="Blackberry">
+                    <span>BLACKBERRY & GRAPE</span>
+                </div>
+            </label>
+
+            <label class="flavor-option">
+                <input type="radio" name="flavor" value="elderflower">
+                <div class="option-content">
+                    <img src="https://res.cloudinary.com/dfoch6txc/image/upload/v1783332212/ELDERFLOWER-_-APPLE-CAN_afk3hf.png" alt="Elderflower">
+                    <span>ELDERFLOWER & APPLE</span>
+                </div>
+            </label>
+
+            <div class="stars-container">
+                <p class="section-title">Tap to Rate:</p>
+                <div class="star-rating">
+                    <span class="star" data-value="5">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="1">★</span>
+                </div>
+            </div>
+
+            <button id="submit-vote-btn" class="submit-btn">Send Vote 🚀</button>
+        </div>
+    </div>
+
+    <div id="success-popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Thank You! 🎉</h2>
+            <p>Your vote has been sent to the big screen successfully.</p>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
